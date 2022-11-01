@@ -1,0 +1,56 @@
+<h1>{{tittle}}</h1>
+<div>{{pageheading}}</div>
+<div>{{pagecount}}</div>
+
+<div *ngIf="userloggedin">
+    <div>{{sampleObjects.firstName}} {{sampleObjects.lastName}}</div>
+</div>
+<div>
+    <table class="table table-bordered">
+        <tr>
+            <th>firstname</th>
+            <td>{{firstname}}</td>
+            </tr>
+            <tr>
+            <th>lastname</th>
+            <td>{{lastname}}</td>
+        </tr>
+        <tr>
+            <th>age</th>
+            <td>{{age}}</td>
+        </tr>
+        <tr>
+            <th>Loaction</th>
+            <td>{{Location}}</td>
+        </tr>
+        <tr>
+            <th>salary</th>
+            <td>{{salary}}</td>
+
+        </tr>
+    </table>
+</div>
+<img [src] ="imageSource" alt="asdas"/>
+<input type="text" [(ngModel)]="salary">
+<br>
+<table>
+    <tr>
+        <td>firstname</td>
+        <td>lastname</td>
+        <td>Location</td>
+        <td>age</td>
+    </tr>
+    <tr>
+        <td [attr.colspan]="ColVal">firstname</td>
+       
+        <td>Location</td>
+        <td>age</td>
+    </tr>
+</table>
+
+
+<button (click)="hieveryone()">click</button>
+
+
+<!-- <p>this is a paragraph</p>
+<button (click)="toggle between hide() and show()">toggle</button> -->

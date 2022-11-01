@@ -1,0 +1,33 @@
+<div class="navbar">
+    <a class="active" href="#"> Home</a>
+</div>
+
+   <table width="100%" border="2px solidblack">
+        <tr>
+            <th>userId</th>
+            <th>id</th>
+            <th>title</th>
+            <th>body</th>
+            </tr>
+            <tr *ngFor="let userdata of usersData;">
+            <td>{{userdata.userId}}</td>
+            <td>{{userdata.id}}</td>
+            <td>{{userdata.title}}</td>
+            <td>{{userdata.body}}</td>
+           </tr>
+    </table> 
+
+<!-- <div>
+    <button type="click" increment()>+</button>
+    <button @decrement()>-</button>
+    <button @reset()>Reset</button>
+</div>  -->
+<div>
+    <button type="txt" ></button>
+</div>
+<!-- <div>
+    <button type="button" (click)="dec()" title="smaller">-</button>
+    <button type="button" (click)="inc()" title="bigger">+</button>
+    <span [style.font-size.px]="size">FontSize: {{size}}px</span>
+  </div> -->
+  

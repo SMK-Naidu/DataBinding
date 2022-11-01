@@ -1,0 +1,15 @@
+table,th,td{
+    border: 2px solid black;
+}
+.c1{
+    background-color: aquamarine;
+    color: #333;
+}
+.c2{
+    color: brown;
+    font-size: 40px;
+}
+.c3{
+    background-color: burlywood;
+    color: #333;
+}
